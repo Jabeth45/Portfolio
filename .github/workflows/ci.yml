@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Read-only by default. This workflow needs no secrets and no write access.
+permissions:
+  contents: read
+
+# A new push cancels the older run for the same branch.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # Installs exactly what package-lock.json says.
+      - run: npm ci
+
+      # Fails the check if the site does not build.
+      - run: npm run build
+
+      # Runtime dependencies only. Fails on high or critical advisories.
+      - run: npm audit --omit=dev --audit-level=high

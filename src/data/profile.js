@@ -1,13 +1,13 @@
 // EDIT ME: personal info used by the hero, contact section and footer.
-// Wording matches the CV (Yabets_Melese_CV_Resume.pdf). Change both together.
+// Headline matches the LinkedIn headline. Keep the CV (public/Yabets-Melese-CV.pdf) in sync.
 export const profile = {
   name: "Yabets Melese",
 
   // The headline from the CV, one entry per segment. The hero joins them with " | ".
-  role: ["Software Engineer", "Cybersecurity · Penetration Testing", "Full-Stack Developer"],
+  role: ["Software Engineer", "Cybersecurity Enthusiast", "Full-Stack Developer"],
 
   intro:
-    "Third-year Software Engineering student at Arba Minch University. I build full-stack apps and security tools, and I test web apps for security gaps. Looking for a software development internship, with a growing focus on cybersecurity.",
+    "Software Engineer building full-stack apps and security tools, and testing web apps for security gaps. Looking for a software development internship, with a growing focus on cybersecurity.",
 
   // Put a square photo (600x600 or bigger) in /public and update src, width and height.
   photo: {
