@@ -10,7 +10,6 @@ export default function Footer() {
       </a>
       <div className="footer-note">
         <p className="footer-copy">© {new Date().getFullYear()} All rights reserved.</p>
-        <p className="footer-sub">Designed &amp; built in {profile.location}</p>
       </div>
       <a href="#home" className="footer-top">
         Back to top <span aria-hidden="true">↑</span>

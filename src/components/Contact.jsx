@@ -5,7 +5,7 @@ export default function Contact() {
 
   return (
     <section className="contact container" id="contact" aria-labelledby="contact-title">
-      <p className="eyebrow">03 / CONTACT</p>
+      <p className="eyebrow">04 / CONTACT</p>
       <h2 id="contact-title">
         {contact.title}
         <span>.</span>

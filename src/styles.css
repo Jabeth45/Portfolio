@@ -299,6 +299,21 @@ button:focus-visible {
   letter-spacing: -1.2px;
 }
 
+/* ---------- About ---------- */
+
+.about-body {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-body p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
 /* ---------- Skills ---------- */
 
 .skill-groups {
@@ -744,7 +759,8 @@ body:has(.soon-dialog[open]) {
 }
 
 @media (max-width: 340px) {
-  .navbar nav a[href="#about"] { display: none; }
+  .navbar nav a[href="#about"],
+  .navbar nav a[href="#skills"] { display: none; }
 }
 
 @media (max-width: 440px) {

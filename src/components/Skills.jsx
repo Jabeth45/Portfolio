@@ -3,9 +3,9 @@ import { skillGroups } from "../data/skills.js";
 
 export default function Skills() {
   return (
-    <section className="section container" id="about" aria-labelledby="skills-title">
+    <section className="section container" id="skills" aria-labelledby="skills-title">
       <div className="section-heading">
-        <p className="eyebrow">01 / ABOUT</p>
+        <p className="eyebrow">02 / SKILLS</p>
         <h2 id="skills-title">Skills</h2>
       </div>
       <div className="skill-groups">

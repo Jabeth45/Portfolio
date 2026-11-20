@@ -2,8 +2,9 @@ import BrandMark from "./BrandMark.jsx";
 
 const links = [
   { label: "Home", href: "#home", hideOnPhone: true },
-  { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 

@@ -9,6 +9,12 @@ export const profile = {
   intro:
     "Software Engineer building full-stack apps and security tools, and testing web apps for security gaps. Looking for a software development internship, with a growing focus on cybersecurity.",
 
+  // Paragraphs shown in the About section.
+  about: [
+    "I'm a Software Engineering student at Arba Minch University with a strong interest in cybersecurity, software development, and cloud computing.",
+    "I enjoy exploring technology, building practical solutions, understanding how systems work, and finding ways to make them more secure and reliable.",
+  ],
+
   // Put a square photo (600x600 or bigger) in /public and update src, width and height.
   photo: {
     src: "/profile.webp",
